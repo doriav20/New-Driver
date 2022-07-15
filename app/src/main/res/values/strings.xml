@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">נהג חדש</string>
+    <string name="titleBar">זמן שנותר למלווה</string>
+    <string name="clockString">תאריך הנפקת רישיון</string>
+    <string name="firstTextView">מלווה יום ולילה</string>
+    <string name="secondTextView">מלווה לילה</string>
+    <string name="thirdTextView">נהג חדש</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

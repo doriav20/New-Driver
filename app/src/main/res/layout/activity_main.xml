@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleBarTextView"
+        android:layout_width="415dp"
+        android:layout_height="120dp"
+        android:background="@drawable/titlebarbackground"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="16dp"
+        android:text="@string/titleBar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:translationY="-25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/changeLicenseDateBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="@string/clockString"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/dayNightTitleTextView"
+        android:layout_width="168dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/firstTextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightUntilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="144dp"
+        android:text="עד ה-"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="180dp"
+        android:text="00 / 00 / 0000"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightHoursTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="212dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightMinutesTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="144dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightDaysTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="280dp"
+        android:text="ימים"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightHoursTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="212dp"
+        android:text="שעות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightSecondsTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="76dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightSecondsTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="76dp"
+        android:text="שניות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightDaysTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="280dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayNightMinutesTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="144dp"
+        android:text="דקות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyTitleTextView"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/secondTextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlySecondsTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="76dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyDaysTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="280dp"
+        android:text="ימים"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlySecondsTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="76dp"
+        android:text="שניות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyHoursTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="212dp"
+        android:text="שעות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyDaysTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="280dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="180dp"
+        android:text="00 / 00 / 0000"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyMinutesTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="144dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyMinutesTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="144dp"
+        android:text="דקות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyHoursTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="212dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nightOnlyUntilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="144dp"
+        android:text="עד ה-"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverTitleTextView"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/thirdTextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverMinutesTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="144dp"
+        android:text="דקות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverHoursTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="212dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverUntilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="144dp"
+        android:text="עד ה-"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverSecondsTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="76dp"
+        android:text="שניות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverMinutesTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="144dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverDaysTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="280dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverSecondsTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="76dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="180dp"
+        android:text="00 / 00 / 0000"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverHoursTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="212dp"
+        android:text="שעות"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDriverDaysTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="280dp"
+        android:text="ימים"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
